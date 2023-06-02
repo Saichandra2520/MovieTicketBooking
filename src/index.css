@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Fira+Sans&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@200;300;500;700&family=Roboto&family=Source+Sans+Pro:wght@600&family=Ubuntu:wght@700&display=swap');
+*{
+   margin: 0;
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styling Header  */
+
+header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(to bottom, #FF4C70, #A835FF);
+}
+
+header h1{
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Styling Movie Container  */
+
+.movie-wrapper
+{
+  position: relative;
+  top: 5rem;
+  margin: 2rem;
+   padding: 2rem;
+   background-color: rgb(245, 245, 245);
+   box-shadow: 3px 3px rgb(243, 239, 239), -3px -3px rgb(243, 239, 239);
+   display: flex;
+   justify-content: center;
+}
+
+.all-movies-container{
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2rem;
+   
+}
+
+/* Styling Movie Card section */
+
+.card-container
+{
+  width: 220px;
+  height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px lightblue;
+}
+
+.card-container img{
+  width: 90%;
+  height: 18rem;
+}
+
+.card-container h3{
+  font-size: 1.1rem;
+  margin: 1rem 0 0.1rem 0;
+  letter-spacing: 1.2px;
+  
+}
+
+.card-container p
+{
+   font-size: .8rem;
+   margin-top: 0;
+   padding: 0;
+   color: rgb(115, 113, 109);
+}
+
+button
+{
+  width: 9rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(240, 54, 54);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+button:hover
+{
+  background-color: rgba(240, 54, 54, 0.9);
+}
+
+/* Styling Movie Summary Section */
+.movie-summary
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.summary-Top
+{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.summary-down p
+{
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.movie-details
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.movie-details h2
+{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.movie-details p{
+  font-size: .8rem;
+   margin-top: 1rem;
+   padding: 0;
+   color: rgb(115, 113, 109);
+   font-weight: 500;
+}
+
+.movie-details button{
+  margin-top: 1.5rem;
+  height: 2.5rem;
+}
+
+/* Styling Booking Form Section */
+
+.booking-container
+{
+  position: relative;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.booking-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3rem;
+}
+
+.form-group
+{
+  display: flex;
+  gap: 1rem;
+
+}
+
+.form-group label{
+   font-weight: 300;
+}
+
+.form-group input{
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 50%;
+  max-width: 14rem;
+  font-size: 1rem;
+}
+
+
+
+/* Responsive Design */
+
+@media screen and (max-width : 600px) {
+    .summary-Top
+    {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+.movie-details {
+
+  gap: 1rem;
+}
+
+.movie-details button{
+  height: 2.5rem;
+}
+.booking-container{
+  padding: 1rem;
+}
+
+.booking-container h1
+{
+  font-size: 1.5rem;
+}
+.form-group label{
+  font-size: .8rem;
+}
+}
